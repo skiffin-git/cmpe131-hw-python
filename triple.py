@@ -1,4 +1,6 @@
 def tripler(fnc):
-    fnc()
-    fnc()
-    fnc()
+    def func():
+        fnc()
+        fnc()
+        fnc()
+    return func
